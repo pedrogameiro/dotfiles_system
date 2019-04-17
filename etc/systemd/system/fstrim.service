@@ -1,0 +1,7 @@
+[Unit]
+Description=Discard unused blocks
+
+[Service]
+Type=oneshot
+ExecStartPre=/usr/bin/perl -e 'sleep(int(rand(600))+600)'
+ExecStart=/sbin/fstrim -av
