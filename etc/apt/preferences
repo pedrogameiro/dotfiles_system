@@ -1,0 +1,37 @@
+
+Package: *
+Pin: release a=unstable
+Pin-Priority: 800
+
+Package: *
+Pin: release a=testing
+Pin-Priority: 700
+
+Package: *
+Pin: release a=stable-updates
+Pin-Priority: 400
+
+Package: *
+Pin: release a=stable
+Pin-Priority: 400
+
+Package: *
+Pin: release a=oldstable
+Pin-Priority: 400
+
+Package: *
+Pin: release a=oldstable-updates
+Pin-Priority: 400
+
+Package: *
+Pin: release a=jessie-backports
+Pin-Priority: 400
+
+Package: *
+Pin: release a=wheezy-backports
+Pin-Priority: 400
+
+Package: *
+Pin: release a=experimental
+Pin-Priority: 400
+

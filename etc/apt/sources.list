@@ -1,0 +1,52 @@
+
+# ============= Oldstable =============
+deb http://ftp.pt.debian.org/debian oldstable main contrib non-free
+# deb-src http://ftp.pt.debian.org/debian oldstable main contrib non-free
+
+deb http://ftp.pt.debian.org/debian/ oldstable-updates main contrib non-free
+# deb-src http://ftp.pt.debian.org/debian/ oldstable-updates main contrib non-free
+
+deb http://ftp.pt.debian.org/debian-security oldstable/updates main
+# deb-src http://ftp.pt.debian.org/debian-security oldstable/updates main
+
+
+# ============= Stable =============
+deb http://ftp.pt.debian.org/debian stable main contrib non-free
+# deb-src http://ftp.pt.debian.org/debian stable main contrib non-free
+
+deb http://ftp.pt.debian.org/debian/ stable-updates main contrib non-free
+# deb-src http://ftp.pt.debian.org/debian/ stable-updates main contrib non-free
+
+deb http://ftp.pt.debian.org/debian-security stable/updates main
+# deb-src http://ftp.pt.debian.org/debian-security stable/updates main
+
+
+# ============= Testing =============
+deb http://ftp.pt.debian.org/debian testing main contrib non-free
+# deb-src http://ftp.pt.debian.org/debian testing main contrib non-free
+
+deb http://ftp.pt.debian.org/debian/ testing-updates main contrib non-free
+# deb-src http://ftp.pt.debian.org/debian/ testing-updates main contrib non-free
+
+deb http://ftp.pt.debian.org/debian-security testing/updates main
+# deb-src http://ftp.pt.debian.org/debian-security testing/updates main
+
+
+# ============= Unstable =============
+deb http://ftp.pt.debian.org/debian unstable non-free contrib main
+# deb-src http://ftp.pt.debian.org/debian unstable non-free contrib main
+
+
+# ============= Experimental =============
+deb http://ftp.pt.debian.org/debian experimental non-free contrib main
+# deb-src http://ftp.pt.debian.org/debian experimental non-free contrib main
+
+
+# ============= Backports =============
+#deb http://ftp.pt.debian.org/debian stretch-backports main
+# deb-src http://ftp.pt.debian.org/debian stretch-backports main
+
+#deb http://ftp.pt.debian.org/debian buster-backports main
+# deb-src http://ftp.pt.debian.org/debian buster-backports main
+
+
