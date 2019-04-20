@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
-
 main() {
     for f in "${@}"; do
         local ddir=$(realpath "$f"); ddir=$(dirname ${ddir##*root})
