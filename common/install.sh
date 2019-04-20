@@ -3,14 +3,12 @@
 cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 
 main() {
-    for f in "${@}"; do
-        local ddir=$(realpath "$f"); ddir=$(dirname ${ddir##*root})
-        local sdir=$(realpath "$f"); sdir=$(dirname ${sdir})
-        local fname=$(basename "$f")
-
-        mkdir -p "$ddir"
-        ln -vTsf "$sdir/$fname" "$ddir/$fname"
-    done
+    local a
+    echo 'Link dotfiles? [y/n]'; read a
+    if [[ "$a" =~ ^(yes|y|Y)$ ]]; then
+        find root -type d -printf '%P\0' | xargs -I% -0 mkdir -p "/%"
+        find root \( -type f -o -type l \) -printf '%P\0' | xargs -0 -I% ln -vTsf "$PWD/root/%" "/%"
+    fi
 }
 
 main "${@}"
